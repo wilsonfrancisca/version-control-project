@@ -25,33 +25,43 @@ class BikeShareStatistics:
 
     def popular_month(self, city_file):
         # TODO: implement popular_month function
+        pass
 
     def popular_day(self, city_file):
         # TODO: implement popular_day function
+        pass
 
     def popular_hour(self, city_file):
         # TODO: implement popular_hour function
+        pass
 
     def trip_duration(self, city_file):
         # TODO: implement trip_duration function
+        pass
 
     def popular_stations(self, city_file):
         # TODO: implement popular_stations function
+        pass
 
     def popular_trip(self, city_file):
         # TODO: implement popular_trip function
+        pass
 
     def users(self, city_file):
         # TODO: implement users function
+        pass
 
     def gender(self, city_file):
         # TODO: implement gender function
+        pass
 
     def birth_years(self, city_file):
         # TODO: implement birth_years function
+        pass
 
     def display_data(self):
         # TODO: implement display_data function
+        pass
 
     def calculate_statistics(self):
         self.get_city()
@@ -61,24 +71,18 @@ class BikeShareStatistics:
         start_time = time.time()
 
         if self.time_period == 'none':
-            # TODO: call popular_month function and print the results
+            self.popular_month(self.city)
 
         if self.time_period == 'none' or self.time_period == 'month':
-            # TODO: call popular_day function and print the results
+            self.popular_day(self.city)
 
-        # TODO: call popular_hour function and print the results
-
-        # TODO: call trip_duration function and print the results
-
-        # TODO: call popular_stations function and print the results
-
-        # TODO: call popular_trip function and print the results
-
-        # TODO: call users function and print the results
-
-        # TODO: call gender function and print the results
-
-        # TODO: call birth_years function and print the results
+        self.popular_hour(self.city)
+        self.trip_duration(self.city)
+        self.popular_stations(self.city)
+        self.popular_trip(self.city)
+        self.users(self.city)
+        self.gender(self.city)
+        self.birth_years(self.city)
 
         print("That took %s seconds." % (time.time() - start_time))
 
